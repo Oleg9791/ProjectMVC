@@ -5,7 +5,7 @@ namespace App\Model;
 
 use W1020\Table as ORMTable;
 
-class TasksModel extends ORMTable
+class TasksUserModel extends ORMTable
 {
     /**
      * @param int $page

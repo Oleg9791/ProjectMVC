@@ -16,7 +16,8 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="?type=Aut&action=logout">Выйти</a>
+                <a class="nav-link" href="?type=Aut&action=logout">Выйти(<?= isset($_SESSION['user']['code']) ? $_SESSION['user']['name'] : "" ?>
+                    )</a>
             </li>
         </ul>
     </div>
