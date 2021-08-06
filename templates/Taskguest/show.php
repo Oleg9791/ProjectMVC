@@ -5,6 +5,7 @@ use W1020\HTML\Table;
 
 unset($this->data["comments"]['del']);
 unset($this->data["comments"]['edit']);
+unset($this->data["comments"]['performance']);
 echo (new Table())
     ->setData($this->data["table"])
     ->setHeaders($this->data["comments"])

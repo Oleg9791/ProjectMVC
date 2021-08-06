@@ -124,6 +124,7 @@ abstract class Table extends AbstractController
      */
     public function actionEdit(): void
     {
+//        print_r($_POST);
         $this->model->upd($_GET["id"], $_POST);
         $this->redirect("?type={$this->getCurrentClass()}&action=show");
     }

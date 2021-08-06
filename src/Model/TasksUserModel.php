@@ -7,6 +7,9 @@ use W1020\Table as ORMTable;
 
 class TasksUserModel extends ORMTable
 {
+
+    protected int $userId;
+
     /**
      * @param int $page
      * @return array<array>
@@ -25,11 +28,16 @@ FROM
     `tasks`,
     `users`
 WHERE
-    `tasks`.`users_id` = `users`.`id` 
+    `tasks`.`users_id` = `users`.`id` and `users`.`id` = $this->userId
 SQL;
         return $this->query(
             "$sql LIMIT " . (($page - 1) * $this->pageSize) . ",$this->pageSize;"
         );
+    }
+
+    public function rowCount(): int
+    {
+        return $this->query("SELECT COUNT(*) as COUNT FROM `$this->tableName` WHERE `users_id` = $this->userId")[0]["COUNT"];
     }
 
     public function getGroupList()
@@ -52,4 +60,27 @@ SQL;
         return $arr;
 
     }
+
+    /**
+     * @param int $userId
+     * @return $this
+     */
+    public function setUserId(int $userId): static
+    {
+        $this->userId = $userId;
+        return $this;
+    }
+
+//    public function getPerformance()
+//    {
+//        $data = $this->query("SELECT `id`,`performance` FROM `tasks`");
+//        $arr = [];
+//        foreach ($data as $row) {
+//            $arr[$row['id']] = $row['performance'];
+//        }
+//        return $arr;
+//
+//    }
+
+
 }

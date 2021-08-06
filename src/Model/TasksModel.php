@@ -20,7 +20,8 @@ SELECT
     `tasks`.`discription`,
     `tasks`.`start_date`,
     `tasks`.`end_date`,
-    `users`.`name` AS 'users_id'
+    `users`.`name` AS 'users_id',
+    `tasks`.`performance`
 FROM
     `tasks`,
     `users`
@@ -52,4 +53,5 @@ SQL;
         return $arr;
 
     }
+
 }

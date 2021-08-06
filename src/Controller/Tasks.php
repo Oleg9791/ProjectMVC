@@ -42,7 +42,9 @@ class Tasks extends Table
         $this
             ->view
             ->addData(["groupList" => $this->model->getGroupList(),
-                "loginList" => $this->model->getNameList()])
+                "loginList" => $this->model->getNameList()
+//                "performanceList" => $this->model->getPerformance()])
+                        ])
             ->setTemplate("Tasks/add_edit");
     }
 }

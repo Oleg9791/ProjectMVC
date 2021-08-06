@@ -22,9 +22,9 @@ use W1020\HTML\Select; ?>
                     ->setSelected($this->data["row"]['users_id'] ?? "")
                     ->html() . '<br>';
 
-        }
-        elseif ($field == "performance") {
-            echo (new Select())
+        } elseif ($field == "performance") {
+            echo
+                (new Select())
                     ->setName($field)
                     ->setData([
                         "выполнено" => "выполнено",
