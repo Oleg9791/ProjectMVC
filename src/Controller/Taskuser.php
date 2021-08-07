@@ -14,7 +14,7 @@ class Taskuser extends Tasks
         $this->pageSize = $config["page_size"];
         $this->model = new TasksUserModel($config);
         $this->model->setUserId($_SESSION['user']['id']);
-//        print_r($_SESSION['user']['id']);
+        print_r($_SESSION['user']['id']);
 
     }
 

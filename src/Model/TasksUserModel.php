@@ -9,6 +9,16 @@ class TasksUserModel extends ORMTable
 {
 
     protected int $userId;
+    /**
+     * @param int $userId
+     * @return $this
+     */
+    public function setUserId(int $userId): static
+    {
+        $this->userId = $userId;
+        return $this;
+    }
+
 
     /**
      * @param int $page
@@ -61,15 +71,6 @@ SQL;
 
     }
 
-    /**
-     * @param int $userId
-     * @return $this
-     */
-    public function setUserId(int $userId): static
-    {
-        $this->userId = $userId;
-        return $this;
-    }
 
 //    public function getPerformance()
 //    {

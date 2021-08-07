@@ -1,6 +1,8 @@
 <?php
-//print_r($this->data);
-use W1020\HTML\Select; ?>
+print_r($this->data);
+use W1020\HTML\Select;
+
+?>
 
 <form action="<?= $this->data['action'] ?>" method="post">
     <?php
