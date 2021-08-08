@@ -1,7 +1,7 @@
 <?php
 //print_r($_SESSION);
 
-print_r($this->data);
+//print_r($this->data);
 
 use W1020\HTML\Select; ?>
 
