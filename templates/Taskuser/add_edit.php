@@ -4,24 +4,29 @@
 //print_r($this->data);
 
 use W1020\HTML\Select; ?>
+<div class="container">
+    <div class="row">
+        <div class="col" >
 
-<form action="<?= $this->data['action'] ?>" method="post">
-    <?php
-    foreach ($this->data["comments"] as $field => $value) {
-        if ($field == "performance") {
-            echo (new Select())
-                    ->setName($field)
-                    ->setData([
-                        "выполнено" => "выполнено",
-                        "не выполнено" => "не выполнено"
-                    ])
-                    ->setSelected($this->data["row"]['performance'] ?? "")
-                    ->html() . '<br>';
+        </div>
+        <div class="col" id="log">
+            <form action="<?= $this->data['action'] ?>" method="post">
+                <?php
+                foreach ($this->data["comments"] as $field => $value) {
+                    if ($field == "performance") {
+                        echo (new Select())
+                                ->setName($field)
+                                ->setData([
+                                    "выполнено" => "выполнено",
+                                    "не выполнено" => "не выполнено"
+                                ])
+                                ->setSelected($this->data["row"]['performance'] ?? "")
+                                ->html() . '<br>';
 
-        } else {
-            echo "<input type='hidden' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'>";
+                    } else {
+                        echo "<input type='hidden' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'>";
 
-        }
+                    }
 //        if ($field == 'start_date' || $field == 'end_date' and empty($this->data['row'][$field])) {
 //            echo $value . "<br>";
 //            echo "<input type='hidden' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
@@ -52,7 +57,14 @@ use W1020\HTML\Select; ?>
 
 //        }
 
-    }
-    ?>
-    <input type="submit" value="ok" class="btn btn-primary">
-</form>
+                }
+                ?>
+                <input type="submit" value="ok" class="btn btn-primary">
+            </form>
+
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
