@@ -1,13 +1,13 @@
 <?php
 //print_r($_SESSION);
 
-print_r($this->data);
+//print_r($this->data);
 
 use W1020\HTML\Select; ?>
 <div class="container">
     <div class="row">
         <div class="col">
-            Column
+
         </div>
         <div class="col">
             <form action="<?= $this->data['action'] ?>" method="post">
@@ -38,7 +38,7 @@ use W1020\HTML\Select; ?>
                                 ->setSelected($this->data["row"]['performance'] ?? "")
                                 ->html() . '<br><br>';
                     } else {
-                        echo "<input class='form-control form-group' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
+                        echo "<textarea class='form-control form-group' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'></textarea><br>";
                     }
                 }
                 ?>
@@ -47,7 +47,7 @@ use W1020\HTML\Select; ?>
 
         </div>
         <div class="col">
-            Column
+
         </div>
     </div>
 </div>

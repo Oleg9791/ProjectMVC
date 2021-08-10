@@ -1,5 +1,5 @@
 <?php
-print_r($this->data);
+//print_r($this->data);
 ?>
 <div class="container">
     <div class="row">
