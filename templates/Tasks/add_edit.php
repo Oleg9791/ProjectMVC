@@ -38,7 +38,7 @@ use W1020\HTML\Select; ?>
                                 ->setSelected($this->data["row"]['performance'] ?? "")
                                 ->html() . '<br><br>';
                     } else {
-                        echo "<textarea class='form-control form-group' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'></textarea><br>";
+                        echo "<textarea class='form-control form-group' name='$field' value=> " . ($this->data['row'][$field] ?? "") . "</textarea><br>";
                     }
                 }
                 ?>

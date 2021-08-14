@@ -19,13 +19,6 @@ use W1020\HTML\Select;
                                 ->setData($this->data["groupList"])
                                 ->setSelected($this->data["row"]['user_groups_id'] ?? "")
                                 ->html() . '<br>'.'<br>';
-//            echo "<select name='$field'>";
-//            foreach ($this->data["groupList"] as $id => $name) {
-//                echo "<option value='$id' " .
-//                    (($this->data["row"]['user_groups_id'] == $id) ? "selected" : "") .
-//                    ">$name</option>";
-//            }
-//            echo "</select><br>";
 
                     } else {
                         echo "<input class='form-control form-group' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";

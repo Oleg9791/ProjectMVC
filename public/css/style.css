@@ -453,8 +453,8 @@ pre {
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
+      max-width: 460px; } }
+  @media (min-width: 600px) {
     .container {
       max-width: 1140px; } }
 
@@ -7955,7 +7955,7 @@ a.text-dark:hover, a.text-dark:focus {
   body {
     min-width: 992px !important; }
   .container {
-    min-width: 992px !important; }
+    min-width: 492px !important; }
   .navbar {
     display: none; }
   .badge {

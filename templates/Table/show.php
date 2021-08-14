@@ -19,4 +19,4 @@ echo (new Pagination())
     ->html();
 ?>
 
-<a id="add" href="?type=<?= $this->data['controllerName'] ?>&action=showadd" class="btn btn-primary">Добавить задание</a>
+<a id="add" href="?type=<?= $this->data['controllerName'] ?>&action=showadd" class="btn btn-primary">Добавить</a>
