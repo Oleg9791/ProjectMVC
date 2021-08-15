@@ -4,6 +4,9 @@
 namespace App\Helper;
 
 
+/**
+ * Проверка пароля на соответствующие условия
+ */
 class Password
 {
     protected string $pass;

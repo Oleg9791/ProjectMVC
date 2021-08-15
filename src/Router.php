@@ -2,8 +2,14 @@
 
 namespace App;
 
+/** Данный класс распределяет на существующий
+ * контроллер в зависимости от url-адреса
+ */
 class Router
 {
+    /** Проверка на существование
+     * контроллера и метода
+     */
     public function run(): void
     {
         $type = ucfirst(strtolower($_GET["type"] ?? "Main"));

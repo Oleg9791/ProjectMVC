@@ -6,9 +6,12 @@ namespace App\Model;
 
 use W1020\Table as ORMTable;
 
+/**
+ * Выборка данных из БД с необходимой проверкой
+ */
 class AutModel extends ORMTable
 {
-    /**
+    /** Проверка на соответствие логина и пароля
      * @param string $login
      * @param string $pass
      * @return array<array>
@@ -43,7 +46,7 @@ SQL;
         //print_r($this->query("SELECT * FROM `users` WHERE login='$login' AND pass='$pass'")[0]['user_group']);
     }
 
-    /**
+    /** Проверка на существование логина
      * @param string $login
      * @return bool
      * @throws \Exception
@@ -53,7 +56,7 @@ SQL;
         return $this->query("SELECT COUNT(*) AS 'C' FROM `$this->tableName` WHERE `login`='$login'")[0]['C'];
     }
 
-    /**
+    /** Добавление нового пользователя в БД
      * @throws \Exception
      */
     public function addNewUser(string $login, string $pass, string $name): void

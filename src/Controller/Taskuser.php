@@ -4,6 +4,10 @@ namespace App\Controller;
 
 use App\Model\TasksUserModel;
 
+/**
+ * Наследует родительский класс Task,
+ * переопределяет текущий метод CRUD
+ */
 class Taskuser extends Tasks
 {
     public function __construct()

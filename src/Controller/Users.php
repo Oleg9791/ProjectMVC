@@ -6,6 +6,11 @@ namespace App\Controller;
 
 use App\Model\UsersModel;
 
+/**
+ * Наследует родительский класс Table,
+ * переопределяет текущие методы CRUD
+ */
+
 class Users extends Table
 {
     protected string $tableName = "users";
@@ -19,6 +24,9 @@ class Users extends Table
         $this->model = new UsersModel($config);
 
     }
+    /**
+     * Показывает страницу для редактирования строки
+     */
 
     public function actionShowEdit(): void
     {
@@ -28,6 +36,9 @@ class Users extends Table
             ->addData(["groupList" => $this->model->getGroupList()])
             ->setTemplate("Users/add_edit");
     }
+    /**
+     * Показывает страницу для добавления новой строки
+     */
 
     public function actionShowAdd(): void
     {

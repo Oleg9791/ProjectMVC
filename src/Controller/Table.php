@@ -6,7 +6,7 @@ use W1020\Table as ORMTable;
 use App\View\View;
 
 /**
- * Class Table
+ * Class Table реализует CRUD
  * @package App\Controller
  */
 abstract class Table extends AbstractController
