@@ -27,8 +27,7 @@ use W1020\HTML\Select; ?>
                                 ->setSelected($this->data["row"]['users_id'] ?? "")
                                 ->html() . '<br>';
 
-                    }
-                    elseif ($field == "performance") {
+                    } elseif ($field == "performance") {
                         echo (new Select())
                                 ->setName($field)
                                 ->setData([
@@ -38,7 +37,7 @@ use W1020\HTML\Select; ?>
                                 ->setSelected($this->data["row"]['performance'] ?? "")
                                 ->html() . '<br><br>';
                     } else {
-                        echo "<textarea class='form-control form-group' name='$field' value=> " . ($this->data['row'][$field] ?? "") . "</textarea><br>";
+                        echo "<textarea class='form-control form-group' name='$field'>" . ($this->data['row'][$field] ?? "") . "</textarea><br>";
                     }
                 }
                 ?>
