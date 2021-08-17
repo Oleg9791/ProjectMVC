@@ -12,13 +12,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "Taskcustomer" ? " active" : "" ?>"
-                   href="?type=Taskcustomer&action=show">Показать таблицу Taskcustomer</a>
+                   href="?type=Taskcustomer&action=show">Показать таблицу выполняемых работ</a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link"
-                   href="?type=Aut&action=logout">Выйти(<?= isset($_SESSION['user']['code']) ? $_SESSION['user']['name'] : "" ?>
-                    )</a>
+                   href="?type=Aut&action=logout">Выйти(<?= isset($_SESSION['user']['code']) ? $_SESSION['user']['name'] : "" ?>)</a>
             </li>
         </ul>
     </div>

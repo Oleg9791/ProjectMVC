@@ -12,7 +12,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "Taskuser" ? " active" : "" ?>"
-                   href="?type=Taskuser&action=show">Показать таблицу Taskuser</a>
+                   href="?type=Taskuser&action=show">Показать таблицу выполненных работ</a>
             </li>
 
             <li class="nav-item">
