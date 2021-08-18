@@ -36,14 +36,7 @@ WHERE
     `users`.`login`='$login' AND `users`.`password`='$pass'
 SQL;
 
-//        return $this->query("SELECT * FROM `$this->tableName` WHERE login='$login' AND pass='$pass'");
         return $this->query($sql);
-//        if (empty($row)) {
-//            return false;
-//        } else {
-//            return $row[0]['user_group'];
-//        }
-        //print_r($this->query("SELECT * FROM `users` WHERE login='$login' AND pass='$pass'")[0]['user_group']);
     }
 
     /** Проверка на существование логина
@@ -62,8 +55,6 @@ SQL;
     public function addNewUser(string $login, string $pass, string $name): void
     {
         $guestId = $this->query("SELECT `id` FROM `user_groups` WHERE `code` = 'guest'")[0]['id'];
-//        echo $sql = "INSERT INTO `users`(`login`, `pass`, `name`, `user_group`) " .
-//            "VALUES ('$login','$pass','$name','$guestId')";
         $this->runSQL("INSERT INTO `users`(`name`, `login`, `password`, `user_groups_id`) " .
             "VALUES ('$name','$login','$pass','$guestId')");
     }

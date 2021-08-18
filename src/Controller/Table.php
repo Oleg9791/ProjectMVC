@@ -55,12 +55,10 @@ abstract class Table extends AbstractController
             ->addData([
                 "table" => $this->model->setPageSize($this->pageSize)->getPage($page),
                 "comments" => $headers,
-//                "controllerName" => $this->getCurrentClass(),
                 "activePage" => $page,
                 "pageCount" => $this->model->pageCount()
             ])
             ->setTemplate("Table/show");
-//            ->view();
     }
 
     /**
@@ -82,11 +80,9 @@ abstract class Table extends AbstractController
             ->view
             ->addData([
                 "comments" => $this->model->columnComments(),
-//                "controllerName" => $this->getCurrentClass(),
                 "action" => "?type=" . ($this->getCurrentClass()) . "&action=add"
             ])
             ->setTemplate("Table/add_edit");
-//            ->view();
     }
 
     /**
@@ -101,12 +97,9 @@ abstract class Table extends AbstractController
             ->addData([
                 "comments" => $this->model->columnComments(),
                 "row" => $row,
-//                "id" => $_GET["id"],
-//                "controllerName" => $this->getCurrentClass(),
                 "action" => "?type=" . ($this->getCurrentClass()) . "&action=edit&id=$_GET[id]"
             ])
             ->setTemplate("Table/add_edit");
-//            ->view();
     }
 
     /**
@@ -124,7 +117,6 @@ abstract class Table extends AbstractController
      */
     public function actionEdit(): void
     {
-//        print_r($_POST);
         $this->model->upd($_GET["id"], $_POST);
         $this->redirect("?type={$this->getCurrentClass()}&action=show");
     }

@@ -5,9 +5,13 @@ namespace App\Model;
 
 use W1020\Table as ORMTable;
 
+/**
+ * Выборка данных из БД по sql-запросу
+ */
 class UsersModel extends ORMTable
 {
     /**
+     * Отображение страницы с данными из двух таблиц
      * @param int $page
      * @return array<array>
      * @throws \Exception
@@ -33,7 +37,12 @@ SQL;
         );
     }
 
-    public function getGroupList()
+    /**
+     * отображение на странице данных с названием и номером группы пользователей
+     * @return array<array>
+     * @throws \Exception
+     */
+    public function getGroupList(): array
     {
         $data = $this->query("SELECT `id`,`name` FROM `user_groups`");
         $arr = [];

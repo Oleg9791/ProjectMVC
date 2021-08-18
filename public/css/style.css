@@ -5,15 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 #main {
-    /*position: relative;*/
-    /*margin-left: 510px;*/
     background-color: #007bff;
-    /*position: fixed;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
     text-align: center;
-    color: #0b0b0b;
 }
 
 :root {

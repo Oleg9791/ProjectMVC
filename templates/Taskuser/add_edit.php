@@ -6,7 +6,7 @@
 use W1020\HTML\Select; ?>
 <div class="container">
     <div class="row">
-        <div class="col" >
+        <div class="col">
 
         </div>
         <div class="col" id="log">
@@ -27,36 +27,6 @@ use W1020\HTML\Select; ?>
                         echo "<input type='hidden' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'>";
 
                     }
-//        if ($field == 'start_date' || $field == 'end_date' and empty($this->data['row'][$field])) {
-//            echo $value . "<br>";
-//            echo "<input type='hidden' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
-//        } elseif ($field == 'start_date' || $field == 'end_date' and !empty($this->data['row'][$field])) {
-//            echo $value . "<br>";
-//            echo "<input name='$field' type='hidden' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
-//            type='datetime-local'
-//        } elseif ($field == "users_id") {
-//            echo "<input name='$field' type='hidden' value='{$this->data['row']['users_id']}'>";
-
-//            echo (new Select())
-//                    ->setName($field)
-//                    ->setData($this->data["performanceList"])
-//                    ->setSelected($this->data["row"]['performance'] ?? "")
-//                    ->html() . '<br>';
-
-//        } elseif ($field == "discription") {
-//            echo "<input name='$field'  value='{$this->data['row'][$field]}'>";
-//        } else {
-//            echo $value . "<br>";
-//            echo "<input name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
-//            echo (new Select())
-//                    ->setName($field)
-//                    ->setData($this->data["performanceList"])
-//                    ->setSelected($this->data["row"]['performance'] ?? "")
-//                    ->html() . '<br><br>';
-
-
-//        }
-
                 }
                 ?>
                 <input type="submit" value="ok" class="btn btn-primary">

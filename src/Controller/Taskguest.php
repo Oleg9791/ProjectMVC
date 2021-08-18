@@ -3,8 +3,8 @@
 namespace App\Controller;
 
 /**
- * Наследует родительский класс Task,
- * переопределяет текущий метод CRUD
+ * Наследует родительский класс Tasks,
+ * перегружает метод отображения
  */
 class Taskguest extends Tasks
 {

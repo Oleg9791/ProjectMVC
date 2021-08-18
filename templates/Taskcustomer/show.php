@@ -4,9 +4,11 @@
 use W1020\HTML\Pagination;
 use W1020\HTML\Table;
 
-//unset($this->data["comments"]['performance']);
 unset($this->data["comments"]['del']);
-//unset($this->data["comments"]['edit']);
+foreach ($this->data["table"] as &$row) {
+    $row['start_date'] = date("d.m.Y H:i", strtotime($row['start_date']));
+    $row['end_date'] = date("d.m.Y H:i", strtotime($row['end_date']));
+}
 echo (new Table())
     ->setData($this->data["table"])
     ->setHeaders($this->data["comments"])
@@ -20,4 +22,5 @@ echo (new Pagination())
     ->html();
 ?>
 
-<a href="?type=<?= $this->data['controllerName'] ?>&action=showadd"  id="add" class="btn btn-primary">Добавить задание</a>
+<a href="?type=<?= $this->data['controllerName'] ?>&action=showadd" id="add" class="btn btn-primary">Добавить
+    задание</a>

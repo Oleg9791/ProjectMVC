@@ -5,10 +5,17 @@ namespace App\Model;
 
 use W1020\Table as ORMTable;
 
+/**
+ * Выборка данных из БД по sql-запросу
+ */
 class TasksUserModel extends ORMTable
 {
 
+    /**
+     * @var int
+     */
     protected int $userId;
+
     /**
      * @param int $userId
      * @return $this
@@ -21,6 +28,7 @@ class TasksUserModel extends ORMTable
 
 
     /**
+     * Отображение страницы с данными из двух таблиц, с конкретным пользователем
      * @param int $page
      * @return array<array>
      * @throws \Exception
@@ -45,11 +53,21 @@ SQL;
         );
     }
 
+    /**
+     * возвращает количество строк по данному запросу
+     * @return int
+     * @throws \Exception
+     */
     public function rowCount(): int
     {
         return $this->query("SELECT COUNT(*) as COUNT FROM `$this->tableName` WHERE `users_id` = $this->userId")[0]["COUNT"];
     }
 
+    /**
+     * отображение на странице данных с названием и номером группы пользователей
+     * @return array<array>
+     * @throws \Exception
+     */
     public function getGroupList()
     {
         $data = $this->query("SELECT `id`,`name` FROM `user_groups`");
@@ -60,6 +78,11 @@ SQL;
         return $arr;
     }
 
+    /**
+     * отображение на странице данных с логином и номером группы (рабочих)
+     * @return array<array>
+     * @throws \Exception
+     */
     public function getNameList()
     {
         $data = $this->query("SELECT `id`,`login` FROM `users` WHERE `user_groups_id`=2");
@@ -70,18 +93,4 @@ SQL;
         return $arr;
 
     }
-
-
-//    public function getPerformance()
-//    {
-//        $data = $this->query("SELECT `id`,`performance` FROM `tasks`");
-//        $arr = [];
-//        foreach ($data as $row) {
-//            $arr[$row['id']] = $row['performance'];
-//        }
-//        return $arr;
-//
-//    }
-
-
 }

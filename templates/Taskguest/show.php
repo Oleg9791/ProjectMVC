@@ -5,10 +5,9 @@ use W1020\HTML\Table;
 
 unset($this->data["comments"]['del']);
 unset($this->data["comments"]['edit']);
-//unset($this->data["comments"]['performance']);
 foreach ($this->data["table"] as &$row) {
-    $row['start_date'] = date("d.m.Y", strtotime($row['start_date']));
-    $row['end_date'] = date("d.m.Y", strtotime($row['end_date']));
+    $row['start_date'] = date("d.m.Y H:i", strtotime($row['start_date']));
+    $row['end_date'] = date("d.m.Y H:i", strtotime($row['end_date']));
 }
 echo (new Table())
     ->setData($this->data["table"])

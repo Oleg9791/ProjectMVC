@@ -7,7 +7,7 @@ use W1020\Table as ORMTable;
 class ShowNewsModel extends ORMTable
 {
 
-    public function getNewsComments($newsId)
+    public function getNewsComments($newsId): array
     {
         $sql = <<<SQL
 SELECT

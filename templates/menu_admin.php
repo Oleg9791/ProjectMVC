@@ -12,20 +12,20 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "Users" ? " active" : "" ?>"
-                   href="?type=Users&action=show">Показать таблицу Users</a>
+                   href="?type=Users&action=show">Таблица зарегистрированных пользователей</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "Tasks" ? " active" : "" ?>"
-                   href="?type=Tasks&action=show">Показать таблицу Tasks</a>
+                   href="?type=Tasks&action=show">Таблица заданий</a>
             </li>
 
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "UserGroups" ? " active" : "" ?>"
-                   href="?type=UserGroups&action=show">Показать таблицу UserGroups</a>
+                   href="?type=UserGroups&action=show">Таблица групп пользователей</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link"
-                   href="?type=Aut&action=logout">Выйти(<?= isset($_SESSION['user']['code']) ? $_SESSION['user']['name'] : "" ?>)</a>
+                   href="?type=Aut&action=logout">Выйти (<?= isset($_SESSION['user']['code']) ? $_SESSION['user']['name'] : "" ?>)</a>
             </li>
         </ul>
     </div>

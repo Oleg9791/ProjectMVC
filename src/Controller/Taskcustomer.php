@@ -3,8 +3,8 @@
 namespace App\Controller;
 
 /**
- * Наследует родительский класс Task,
- * переопределяет текущие методы CRUD
+ * Наследует родительский класс Tasks,
+ * перегружает текущие методы отображения
  */
 class Taskcustomer extends Tasks
 {

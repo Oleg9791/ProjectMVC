@@ -3,11 +3,10 @@
 namespace App\Controller;
 
 use App\Model\TasksModel;
-use App\Model\UsersModel;
 
 /**
  * Наследует родительский класс Table,
- * переопределяет текущие методы CRUD
+ * перегружает текущие методы из данного класса
  */
 class Tasks extends Table
 {

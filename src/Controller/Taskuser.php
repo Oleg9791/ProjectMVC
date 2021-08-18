@@ -5,8 +5,8 @@ namespace App\Controller;
 use App\Model\TasksUserModel;
 
 /**
- * Наследует родительский класс Task,
- * переопределяет текущий метод CRUD
+ * Наследует родительский класс Tasks,
+ * перегружает методы из данного класса
  */
 class Taskuser extends Tasks
 {
