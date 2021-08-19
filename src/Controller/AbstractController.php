@@ -4,7 +4,8 @@ namespace App\Controller;
 
 use App\View\View;
 
-/** Класс включает в себя отображение с
+/**
+ * Класс включает в себя функцию отображения с
  * определением имени контроллера
  */
 abstract class AbstractController

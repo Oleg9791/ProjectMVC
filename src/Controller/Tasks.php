@@ -19,7 +19,6 @@ class Tasks extends Table
         $config["table"] = $this->tableName;
         $this->pageSize = $config["page_size"];
         $this->model = new TasksModel($config);
-
     }
 
     /**

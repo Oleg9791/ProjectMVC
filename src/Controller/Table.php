@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use W1020\Table as ORMTable;
-use App\View\View;
 
 /**
  * Class Table реализует CRUD
@@ -75,7 +74,6 @@ abstract class Table extends AbstractController
      */
     public function actionShowAdd(): void
     {
-
         $this
             ->view
             ->addData([
@@ -120,5 +118,4 @@ abstract class Table extends AbstractController
         $this->model->upd($_GET["id"], $_POST);
         $this->redirect("?type={$this->getCurrentClass()}&action=show");
     }
-
 }
