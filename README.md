@@ -1,17 +1,16 @@
 # web -service HCS
  ## My Project <br>
-1. Общая информация <br>
-2. Информация для пользователя
-## Общая информация
-<br>
-<p>Сервис для обслуживания заданий жилищного кооператива.</p> 
+1. General information <br>
+2. Information for the user
+## General information
+<p>Service for servicing the tasks of the housing cooperative.</p> 
 
 [comment]: <> (<br>)
- ## Информация пользователю
+ ## Information for the user
  <br>
-Сначала необходимо зарегистрироваться на сайте, указав свой логин и пароль, пароль должен содержать латинские буквы, цифры,
-не должен содержать пробелов, длина пароля должна быть не менее 8 символов.  <br>
+First you need to register on the site, indicating your username and password, the password must contain Latin letters, numbers,
+must not contain spaces, the password must be at least 8 characters long.  <br>
 
- [Ссылка на проект в github](https://github.com/Oleg9791/ProjectMVC.git)
+ [Link to the project in github](https://github.com/Oleg9791/ProjectMVC.git)
 
 
