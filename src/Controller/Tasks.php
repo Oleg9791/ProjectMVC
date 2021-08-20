@@ -11,6 +11,10 @@ use App\Model\TasksModel;
 class Tasks extends Table
 {
     protected string $tableName = "tasks";
+    /**
+     * @var TasksModel
+     */
+    protected  $model;
 
     public function __construct()
     {
@@ -34,6 +38,7 @@ class Tasks extends Table
 
     /**
      * Показывает страницу для добавления новой строки
+     * @throws \Exception
      */
 
     public function actionShowAdd(): void
@@ -50,6 +55,7 @@ class Tasks extends Table
 
     /**
      * Показывает страницу для редактирования строки
+     * @throws \Exception
      */
 
     public function actionShowEdit(): void

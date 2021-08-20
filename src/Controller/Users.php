@@ -13,6 +13,11 @@ use App\Model\UsersModel;
 class Users extends Table
 {
     protected string $tableName = "users";
+    /**
+     * @var UsersModel
+     */
+
+    protected $model;
 
     public function __construct()
     {
@@ -25,6 +30,7 @@ class Users extends Table
 
     /**
      * Показывает страницу для редактирования строки
+     * @throws \Exception
      */
 
     public function actionShowEdit(): void
@@ -38,6 +44,7 @@ class Users extends Table
 
     /**
      * Показывает страницу для добавления новой строки
+     * @throws \Exception
      */
 
     public function actionShowAdd(): void

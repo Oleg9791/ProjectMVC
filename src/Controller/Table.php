@@ -13,7 +13,7 @@ abstract class Table extends AbstractController
     /**
      * @var ORMTable
      */
-    protected ORMTable $model;
+    protected  $model;
     /**
      * @var string
      */
