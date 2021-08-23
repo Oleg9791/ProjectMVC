@@ -1,5 +1,6 @@
 <?php
 //print_r($this->data);
+print_r($_SESSION);
 
 use W1020\HTML\Pagination;
 use W1020\HTML\Table;

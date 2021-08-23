@@ -1,7 +1,7 @@
 <?php
 //print_r($_SESSION);
 
-//print_r($this->data);
+print_r($this->data);
 
 use W1020\HTML\Select; ?>
 <div class="container">
@@ -14,10 +14,10 @@ use W1020\HTML\Select; ?>
                 <?php
                 foreach ($this->data["comments"] as $field => $value) {
                     echo $value . "<br>";
-                    if ($field == 'start_date' || $field == 'end_date' and empty($this->data['row'][$field])) {
+                    if (($field == 'start_date' || $field == 'end_date') and empty($this->data['row'][$field])) {
                         echo "<input class='form-control form-group' type='datetime-local' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
 
-                    } elseif ($field == 'start_date' || $field == 'end_date' and !empty($this->data['row'][$field])) {
+                    } elseif (($field == 'start_date' || $field == 'end_date') and !empty($this->data['row'][$field])) {
                         echo "<input class='form-control form-group' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
 
                     } elseif ($field == "users_id") {
