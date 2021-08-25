@@ -18,7 +18,7 @@ use W1020\HTML\Select; ?>
                         echo "<input class='form-control form-group' type='datetime-local' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
 
                     } elseif ($field == 'start_date' || $field == 'end_date' and !empty($this->data['row'][$field])) {
-                        echo "<input class='form-control form-group' class='form-control form-group' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
+                        echo "<input class='form-control form-group' type='datetime-local' name='$field' value='" . ($this->data['row'][$field] ?? "") . "'><br>";
 
                     } elseif ($field == "users_id") {
                         echo (new Select())
