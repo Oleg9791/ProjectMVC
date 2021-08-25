@@ -7,7 +7,8 @@ namespace App\Controller;
 use App\Helper\Password;
 use App\Model\AutModel;
 
-/** Класс отвечает за аутентификацию
+/**
+ * Класс отвечает за аутентификацию
  * пользователей
  */
 class Aut extends AbstractController
@@ -101,7 +102,8 @@ class Aut extends AbstractController
         }
     }
 
-    /** Проверка на правильность ввода логина
+    /**
+     * Проверка на правильность ввода логина
      * @throws \Exception
      */
     public function actionLogin(): void

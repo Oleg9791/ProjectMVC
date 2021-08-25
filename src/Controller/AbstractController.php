@@ -21,7 +21,8 @@ abstract class AbstractController
         $this->view->setData(['controllerName' => $this->getCurrentClass()]);
     }
 
-    /** Перенаправление на указанный url
+    /**
+     * Перенаправление на указанный url
      * адрес
      */
     public function redirect(string $url): void

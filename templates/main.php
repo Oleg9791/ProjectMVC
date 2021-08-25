@@ -31,7 +31,7 @@
 <div class="bg-top navbar-light">
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
-            <div class="col-lg-8 d-block">
+            <div class="col-lg-12 d-block">
                 <div class="row d-flex">
                     <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
                         <div class="icon d-flex justify-content-center align-items-center"><span
@@ -47,6 +47,14 @@
                             <span>Call Us: + 375 25 945 77 81</span>
                         </div>
                     </div>
+                    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                        <div class="icon d-flex justify-content-center align-items-center"><span
+                                    class="icon-user"></span></div>
+                        <div class="text d-flex align-items-center">
+                            <span>GitHub: https://github.com/Oleg9791/ProjectMVC.git</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
