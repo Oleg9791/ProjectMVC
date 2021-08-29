@@ -1,3 +1,9 @@
+<style>
+    body {
+        background: #c7b39b url(public/images/image_5.jpg);
+    }
+</style>
+
 <div class="container" id="reg">
     <div class="row">
         <div class="col">

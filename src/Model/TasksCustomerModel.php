@@ -8,8 +8,23 @@ use W1020\Table as ORMTable;
 /**
  * Выборка данных из БД по sql-запросу
  */
-class TasksModel extends ORMTable
+class TasksCustomerModel extends ORMTable
 {
+    /**
+     * @var int
+     */
+    protected int $userId;
+
+    /**
+     * @param int $userId
+     * @return $this
+     */
+    public function setUserId(int $userId): static
+    {
+        $this->userId = $userId;
+        return $this;
+    }
+
     /**
      * Отображение страницы с данными из двух таблиц
      * @param int $page
@@ -28,16 +43,28 @@ SELECT
     `tasks`.`performance`,
      `tasks`.`customer_id`
 
+
 FROM
     `tasks`,
     `users`
 WHERE
-    `tasks`.`users_id` = `users`.`id` 
+    `tasks`.`users_id` = `users`.`id` AND `tasks`.`customer_id`=$this->userId
 SQL;
         return $this->query(
             "$sql LIMIT " . (($page - 1) * $this->pageSize) . ",$this->pageSize;"
         );
     }
+
+    /**
+     * возвращает количество строк по данному запросу
+     * @return int
+     * @throws \Exception
+     */
+    public function rowCount(): int
+    {
+        return $this->query("SELECT COUNT(*) as COUNT FROM `$this->tableName` WHERE `customer_id` = $this->userId")[0]["COUNT"];
+    }
+
 
     /**
      * отображение на странице данных с названием и номером группы пользователей
@@ -71,3 +98,19 @@ SQL;
     }
 
 }
+
+//$sql = <<<SQL
+//SELECT
+//    `tasks`.`id`,
+//    `tasks`.`discription`,
+//    `tasks`.`start_date`,
+//    `tasks`.`end_date`,
+//    `users`.`user_groups_id` AS 'users_id',
+//    `users`.`name`,
+//    `tasks`.`performance`
+//FROM
+//    `tasks`,
+//    `users`
+//WHERE
+//    `users`.`user_groups_id` = 3 AND `users`.`name`='Tomas'
+//SQL;

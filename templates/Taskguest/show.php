@@ -8,6 +8,7 @@ unset($this->data["comments"]['edit']);
 foreach ($this->data["table"] as &$row) {
     $row['start_date'] = date("d.m.Y H:i", strtotime($row['start_date']));
     $row['end_date'] = date("d.m.Y H:i", strtotime($row['end_date']));
+    $row['customer_id'] = "​👥​💬​";
 }
 echo (new Table())
     ->setData($this->data["table"])
@@ -19,5 +20,5 @@ echo (new Pagination())
     ->setPageCount($this->data["pageCount"])
     ->setActivePage($this->data["activePage"])
     ->html();
-?>
+
 
