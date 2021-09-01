@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bee - Free Bootstrap 4 Template by Colorlib</title>
+    <title>WEB-SERVICE HCS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -91,7 +91,6 @@ $this->body();
     </div>
 </section>
 
-<? //= isset($_SESSION['user']['code']) ? $_SESSION['user']['name'] : "" ?>
 <?php
 if (!empty($_SESSION['warnings'])) {
     foreach ($_SESSION['warnings'] as $warning) {
@@ -100,90 +99,16 @@ if (!empty($_SESSION['warnings'])) {
     $_SESSION['warnings'] = [];
 }
 ?>
-<?php
-///**
-// * @var $this App\View\View
-// */
-//$this->body();
-//?>
 
 <footer class="ftco-footer ftco-bg-dark ftco-section">
-    <!--    <div class="container">-->
-    <!--        <div class="row mb-5">-->
-    <!--            <div class="col-md">-->
-    <!--                <div class="ftco-footer-widget mb-5">-->
-    <!--                    <h2 class="ftco-heading-2 logo"><span class="flaticon-bee"></span>Bee.</h2>-->
-    <!--                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
-    <!--                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">-->
-    <!--                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>-->
-    <!--                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>-->
-    <!--                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-
-    <!--            </div>-->
-    <!--            <div class="col-md">-->
-    <!--                <div class="ftco-footer-widget mb-5 ml-md-4">-->
-    <!--                    <h2 class="ftco-heading-2">Оказываемые услуги</h2>-->
-    <!--                    <ul class="list-unstyled">-->
-    <!--                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Строительство</a></li>-->
-    <!--                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Ремонт</a></li>-->
-    <!--                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Перепланировка</a></li>-->
-    <!--                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Дизайн интерьера</a></li>-->
-    <!--                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Внешний дизайн</a></li>-->
-    <!--                    </ul>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-md-5">-->
-    <!--                <div class="ftco-footer-widget mb-5">-->
-    <!--                    <h2 class="ftco-heading-2">Примеры выполненых работ</h2>-->
-    <!--                    <div class="block-21 mb-4 d-flex">-->
-    <!--                        <a class="blog-img mr-4" style="background-image: url(/public/images/image_1.jpg);"></a>-->
-    <!--                        <div class="text">-->
-    <!--                            <h3 class="heading"><a href="#"></a></h3>-->
-    <!--                            <div class="meta">-->
-    <!--                                <div><a href="#"><span class="icon-calendar"></span> Mar. 03, 2021</a></div>-->
-    <!--                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
-    <!--                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                    <div class="block-21 mb-5 d-flex">-->
-    <!--                        <a class="blog-img mr-4" style="background-image: url(/public/images/image_2.jpg);"></a>-->
-    <!--                        <div class="text">-->
-    <!--                            <h3 class="heading"><a href="#"></a></h3>-->
-    <!--                            <div class="meta">-->
-    <!--                                <div><a href="#"><span class="icon-calendar"></span> Sep. 09, 2021</a></div>-->
-    <!--                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
-    <!--                                <div><a href="#"><span class="icon-chat"></span> 24</a></div>-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--            <div class="col-md">-->
-    <!--                <div class="ftco-footer-widget mb-5">-->
-    <!--                    <h2 class="ftco-heading-2">Новостная рассылка</h2>-->
-    <!--                    <form action="#" class="subscribe-form">-->
-    <!--                        <div class="form-group">-->
-    <!--                            <input type="text" class="form-control mb-2 text-center" placeholder="Введите ваш email">-->
-    <!--                            <input type="submit" value="Подписаться" class="form-control submit px-3">-->
-    <!--                        </div>-->
-    <!--                    </form>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--        <div class="row">-->
     <div class="col-md-12 text-center">
 
-        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        <p>
             Copyright &copy;<script>document.write(new Date().getFullYear());</script>
             All rights reserved<i class="icon-airplay" aria-hidden="true"></i> Oleg Zaitcev <a
                     href="https://colorlib.com" target="_blank"></a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </p>
     </div>
-    <!--        </div>-->
-    <!--    </div>-->
 </footer>
 
 <div id="ftco-loader" class="show fullscreen">

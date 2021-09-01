@@ -99,18 +99,3 @@ SQL;
 
 }
 
-//$sql = <<<SQL
-//SELECT
-//    `tasks`.`id`,
-//    `tasks`.`discription`,
-//    `tasks`.`start_date`,
-//    `tasks`.`end_date`,
-//    `users`.`user_groups_id` AS 'users_id',
-//    `users`.`name`,
-//    `tasks`.`performance`
-//FROM
-//    `tasks`,
-//    `users`
-//WHERE
-//    `users`.`user_groups_id` = 3 AND `users`.`name`='Tomas'
-//SQL;

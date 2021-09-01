@@ -1,6 +1,4 @@
 <?php
-//print_r($_GET);
-//print_r($this->data);
 
 use W1020\HTML\Pagination;
 use W1020\HTML\Table;
