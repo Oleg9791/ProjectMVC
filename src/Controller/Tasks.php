@@ -14,7 +14,7 @@ class Tasks extends Table
     /**
      * @var TasksModel
      */
-    protected  $model;
+    protected $model;
 
     public function __construct()
     {

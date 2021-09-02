@@ -38,8 +38,8 @@ use W1020\HTML\Select;
                         echo (new Select())
                                 ->setName($field)
                                 ->setData([
-                                    "выполнено" => "не выполнено",
-                                    "не выполнено" => "выполнено"
+                                    "не выполнено" => "не выполнено",
+                                    "выполнено" => "выполнено"
                                 ])
                                 ->setSelected($this->data["row"]['performance'] ?? "")
                                 ->html() . '<br><br>';

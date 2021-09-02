@@ -23,9 +23,9 @@ class PasswordTest extends TestCase
                 ->checkMinSize()
         );
 
-        $this->assertTrue($this
+        $this->assertFalse($this
             ->row
-            ->setPass("123graFming")
+            ->setPass("raFming")
             ->checkMinSize()
         );
     }
