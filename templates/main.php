@@ -51,7 +51,7 @@
                         <div class="icon d-flex justify-content-center align-items-center"><span
                                     class="icon-user"></span></div>
                         <div class="text d-flex align-items-center">
-                            <span><a href="https://www.linkedin.com/in/oleg-zaytsev-87a64521a/">Linkedin</a></span>
+                            <span><a href="https://www.linkedin.com/in/oleg-zaytsev-87a64521a/" target="_blank">Linkedin</a></span>
                         </div>
                     </div>
 

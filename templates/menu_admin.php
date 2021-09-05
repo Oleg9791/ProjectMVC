@@ -12,7 +12,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "Users" ? " active" : "" ?>"
-                   href="?type=Users&action=show">Таблица зарегистрированных пользователей</a>
+                   href="?type=Users&action=show">Зарегистрированные пользователи</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "Tasks" ? " active" : "" ?>"
