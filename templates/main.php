@@ -51,7 +51,8 @@
                         <div class="icon d-flex justify-content-center align-items-center"><span
                                     class="icon-user"></span></div>
                         <div class="text d-flex align-items-center">
-                            <span><a href="https://www.linkedin.com/in/oleg-zaytsev-87a64521a/" target="_blank">Linkedin</a></span>
+                            <span><a href="https://www.linkedin.com/in/oleg-zaytsev-87a64521a/"
+                                     target="_blank">Linkedin</a></span>
                         </div>
                     </div>
 
@@ -69,7 +70,15 @@
         </div>
     </div>
 </nav>
+
 <?php
+if (!empty($_SESSION['warnings'])) {
+    foreach ($_SESSION['warnings'] as $warning) {
+        echo "<div class='alert alert-warning' role='alert'>$warning</div>";
+    }
+    $_SESSION['warnings'] = [];
+}
+
 /**
  * @var $this App\View\View
  */
@@ -92,13 +101,13 @@ $this->body();
 </section>
 
 <?php
-if (!empty($_SESSION['warnings'])) {
-    foreach ($_SESSION['warnings'] as $warning) {
-        echo "<div class='alert alert-warning' role='alert'>$warning</div>";
-    }
-    $_SESSION['warnings'] = [];
-}
-?>
+//if (!empty($_SESSION['warnings'])) {
+//    foreach ($_SESSION['warnings'] as $warning) {
+//        echo "<div class='alert alert-warning' role='alert'>$warning</div>";
+//    }
+//    $_SESSION['warnings'] = [];
+//}
+//?>
 
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="col-md-12 text-center">
@@ -107,7 +116,7 @@ if (!empty($_SESSION['warnings'])) {
             Copyright &copy;<script>document.write(new Date().getFullYear());</script>
             All rights reserved<i class="icon-airplay" aria-hidden="true"></i> Oleg Zaitcev <a
                     href="https://colorlib.com" target="_blank"></a>
-            </p>
+        </p>
     </div>
 </footer>
 
