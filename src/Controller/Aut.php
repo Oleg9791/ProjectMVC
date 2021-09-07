@@ -9,6 +9,7 @@ use App\Model\AutModel;
 
 /**
  * Класс отвечает за аутентификацию
+ * и авторизацию
  * пользователей
  */
 class Aut extends AbstractController

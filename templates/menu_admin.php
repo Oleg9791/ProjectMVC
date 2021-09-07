@@ -21,7 +21,7 @@
 
             <li class="nav-item">
                 <a class="nav-link<?= $this->data['controllerName'] == "UserGroups" ? " active" : "" ?>"
-                   href="?type=UserGroups&action=show">Таблица групп пользователей</a>
+                   href="?type=UserGroups&action=show">Группы пользователей</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link"
