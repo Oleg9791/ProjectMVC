@@ -11,7 +11,8 @@ use W1020\Table as ORMTable;
  */
 class AutModel extends ORMTable
 {
-    /** Проверка на соответствие логина и пароля
+    /**
+     * Проверка на соответствие логина и пароля
      * @param string $login
      * @param string $pass
      * @return array<array>
@@ -39,7 +40,8 @@ SQL;
         return $this->query($sql);
     }
 
-    /** Проверка на существование логина
+    /**
+     * Проверка на существование логина
      * @param string $login
      * @return bool
      * @throws \Exception
@@ -49,7 +51,8 @@ SQL;
         return $this->query("SELECT COUNT(*) AS 'C' FROM `$this->tableName` WHERE `login`='$login'")[0]['C'];
     }
 
-    /** Добавление нового пользователя в БД
+    /**
+     * Добавление нового пользователя в БД
      * @throws \Exception
      */
     public function addNewUser(string $login, string $pass, string $name): void
