@@ -18,13 +18,13 @@ First you need to register on the site, indicating your username and password, t
 must not contain spaces, the password must be at least 8 characters long.  <br>
 Admin credentials: admin, lena12345 <br>
 Worker credentials: pavel1, pavel12345 <br>
-roman1, roman12345
+roman1, roman12345 <br><br>
 
-ER-diagramm <br>
+## ER-diagramm <br>
 
 ![img.png](img.png) <br>
 
-Use Case diagram <br>
+## Use Case diagram <br>
 
 ![img_2.png](img_2.png)
 
