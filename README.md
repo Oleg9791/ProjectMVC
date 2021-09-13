@@ -28,7 +28,7 @@ roman1, roman12345 <br><br>
 
 ![img_2.png](img_2.png) <br>
 
-[links to used libraries]:
+[links to used libraries]: <br>
 (https://packagist.org/packages/w1020/html) <br>
 (https://packagist.org/packages/w1020/orm)
 
