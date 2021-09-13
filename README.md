@@ -20,11 +20,11 @@ Admin credentials: admin, lena12345 <br>
 Worker credentials: pavel1, pavel12345 <br>
 roman1, roman12345 <br><br>
 
-## ER-diagramm <br>
+                                                      ## ER-diagram <br>
 
 ![img.png](img.png) <br>
 
-## Use Case diagram <br>
+                                                    ## Use Case diagram <br>
 
 ![img_2.png](img_2.png)
 
