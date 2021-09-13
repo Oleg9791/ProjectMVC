@@ -26,7 +26,11 @@ roman1, roman12345 <br><br>
 
 ## Use Case diagram <br>
 
-![img_2.png](img_2.png)
+![img_2.png](img_2.png) <br>
+
+[links to used libraries]:
+(https://packagist.org/packages/w1020/html) <br>
+(https://packagist.org/packages/w1020/orm)
 
 [Link to project presentation](https://onedrive.live.com/edit.aspx?action=edit&resid=F48DBD99CE308447!1362&ithint=file%2cpptx)
 
