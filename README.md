@@ -20,7 +20,9 @@ Admin credentials: admin, lena12345 <br>
 Worker credentials: pavel1, pavel12345 <br>
 roman1, roman12345
 
-![img.png](img.png)
+![img.png](img.png) <br>
+
+![img_1.png](img_1.png)
 
 [Link to project presentation](https://onedrive.live.com/edit.aspx?action=edit&resid=F48DBD99CE308447!1362&ithint=file%2cpptx)
 
